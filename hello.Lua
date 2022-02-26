@@ -27,16 +27,19 @@ local Tab = Window:NewTab("BloxFruits")
 local Section = Tab:NewSection("Tp(Teleport)")
 
 local Tab = Window:NewTab("FireHand")
-local Section = Tab:NewSection("RightHand")
+local Section = Tab:NewSection("2Hands")
 local Fire = Instance.new("Fire")
 Fire.Parent = game.Players.LocalPlayer.Character.RightHand
 Fire.Heat = 5
 Fire.Size = 2
-Section:NewButton("Toggle", ">:c", function()
- local Section = Tab:NewSection("Lefthand")
-    local Fire = Instance.new("Fire")
+local Fire = Instance.new("Fire")
 Fire.Parent = game.Players.LocalPlayer.Character.LeftHand
 Fire.Heat = 5
 Fire.Size = 2
-    Section:NewButton("Toggle", ">:c", function()
-    
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
