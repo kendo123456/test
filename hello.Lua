@@ -23,8 +23,25 @@ local colors = {
     ElementColor = Color3.fromRGB(20, 20, 20)
 }
 
-local Tab = Window:NewTab("Blox Fruits")
+local Tab = Window:NewTab("BloxFruits")
 local Section = Tab:NewSection("Tp(Teleport)")
 
+local Tab = Window:NewTab("FireHand")
+local Section = Tab:NewSection("RightHand")
+getgenv().Toggled = false
 
+local toggle = Section:NewToggle("Toggle", "Info", (state)
+    getgenv().Toggled = state
+end)
 
+game:GetService("RunService").RenderStepped:Connect(function()
+	if getgenv().Toggled then
+		toggle:UpdateToggle("Toggle On")
+	else
+		toggle:UpdateToggle("Toggle Off")
+	end
+end)
+local Fire = Instance.new("Fire")
+Fire.Parent = game.Players.LocalPlayer.Character.RightHand
+Fire.Heat = 5
+Fire.Size = 5
