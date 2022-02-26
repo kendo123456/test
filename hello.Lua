@@ -4,7 +4,7 @@ local colors = {
   TextColor = Color3.fromRGB(109, 30, 202)
   }
 Section:NewKeybind("Ctrl to close/open hui", ">:c", Enum.KeyCode.Ctrl, function()
-	Library:ToggleUI()
+	Library:ToggleUI(Ctrl)
 end)
 
 local Tab = Window:NewTab("Admin command ")
