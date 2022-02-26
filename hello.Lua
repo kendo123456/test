@@ -3,6 +3,9 @@ local Window = Library.CreateLib("Ken x hub" , "BloodTheme")
 local colors = {
   TextColor = Color3.fromRGB(109, 30, 202)
   }
+Section:NewKeybind("Ctrl to close/open hui", ">:c", Enum.KeyCode.Ctrl, function()
+	Library:ToggleUI()
+end)
 
 local Tab = Window:NewTab("Admin command ")
 local Section = Tab:NewSection("Toggle Admin")
