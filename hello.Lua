@@ -28,16 +28,6 @@ local Section = Tab:NewSection("Tp(Teleport)")
 
 local Tab = Window:NewTab("FireHand")
 local Section = Tab:NewSection("2Hands")
-local Fire = Instance.new("Fire")
-Section:NewButton("Start", ">:c", function()
-Fire.Parent = game.Players.LocalPlayer.Character.RightHand
-Fire.Heat = 5
-Fire.Size = 2
-    
-local Fire = Instance.new("Fire")
-Fire.Parent = game.Players.LocalPlayer.Character.LeftHand
-Fire.Heat = 5
-Fire.Size = 2
 
 
 
