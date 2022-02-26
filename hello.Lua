@@ -31,17 +31,11 @@ local Section = Tab:NewSection("RightHand")
 local Fire = Instance.new("Fire")
 Fire.Parent = game.Players.LocalPlayer.Character.RightHand
 Fire.Heat = 5
-Fire.Size = 5
-getgenv().Toggled = false
-
-local toggle = Section:NewToggle("Toggle", "Info", (state)
-    getgenv().Toggled = state
-end)
-
-game:GetService("RunService").RenderStepped:Connect(function()
-	if getgenv().Toggled then
-		toggle:UpdateToggle("Toggle On")
-	else
-		toggle:UpdateToggle("Toggle Off")
-	end
+Fire.Size = 2
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
 end)
