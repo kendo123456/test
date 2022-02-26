@@ -10,11 +10,6 @@ local Section = Tab:NewSection("Toggle Admin")
 Section:NewButton("Start", ">:c", function()
   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end)
-Section:NewColorPicker(">:c", ">:c", Color3.fromRGB(202, 121, 30), function(color)
-    print(color)
-    -- Second argument is the default color
-end)
-
 local colors = {
     SchemeColor = Color3.fromRGB(0,255,255),
     Background = Color3.fromRGB(0, 0, 0),
