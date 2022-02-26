@@ -23,8 +23,8 @@ local colors = {
     ElementColor = Color3.fromRGB(20, 20, 20)
 }
 
-
-
+local Tab = Window:NewTab("Blox Fruits")
+local Section = Tab:NewSection("Tp(teleport)")
 
 
 
