@@ -10,7 +10,7 @@ Section:NewButton("Start", "ButtonInfo", function()
   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end)
 
-Section:NewColorPicker("Color", "Nothing it just color", Color3.fromRGB(0,0,0), function(color)
+Section:NewColorPicker("Color", "Nothing it just color", Color3.fromRGB(109, 30, 202), function(color)
     print(color)
     
 end)
@@ -24,7 +24,7 @@ local colors = {
 }
 
 local Tab = Window:NewTab("Blox Fruits")
-local Section = Tab:NewSection("Tp(teleport)")
+local Section = Tab:NewSection("Tp(Teleport)")
 
 
 
