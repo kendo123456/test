@@ -3,11 +3,6 @@ local Window = Library.CreateLib("Ken x hub" , "BloodTheme")
 Keybind = Enum.KeyCode.RightControl
 }
 
-local colors = {
-  TextColor = Color3.fromRGB(109, 30, 202)
-  }
-
-
 local Tab = Window:NewTab("Admin command ")
 local Section = Tab:NewSection("Toggle Admin")
 Section:NewButton("Start", ">:c", function()
