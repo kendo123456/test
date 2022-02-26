@@ -32,7 +32,8 @@ local Fire = Instance.new("Fire")
 Fire.Parent = game.Players.LocalPlayer.Character.RightHand
 Fire.Heat = 5
 Fire.Size = 2
-Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+
+Section:NewToggle("Toggle", "ToggleInfo", function(state)
     if state then
         print("Toggle On")
     else
