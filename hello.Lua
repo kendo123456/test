@@ -28,6 +28,10 @@ local Section = Tab:NewSection("Tp(Teleport)")
 
 local Tab = Window:NewTab("FireHand")
 local Section = Tab:NewSection("RightHand")
+local Fire = Instance.new("Fire")
+Fire.Parent = game.Players.LocalPlayer.Character.RightHand
+Fire.Heat = 5
+Fire.Size = 5
 getgenv().Toggled = false
 
 local toggle = Section:NewToggle("Toggle", "Info", (state)
@@ -41,7 +45,3 @@ game:GetService("RunService").RenderStepped:Connect(function()
 		toggle:UpdateToggle("Toggle Off")
 	end
 end)
-local Fire = Instance.new("Fire")
-Fire.Parent = game.Players.LocalPlayer.Character.RightHand
-Fire.Heat = 5
-Fire.Size = 5
