@@ -37,6 +37,6 @@ local Fire = Instance.new("Fire")
 Fire.Parent = game.Players.LocalPlayer.Character.LeftHand
 Fire.Heat = 5
 Fire.Size = 2
-end)
+
 
 
