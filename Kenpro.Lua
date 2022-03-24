@@ -1,6 +1,10 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Ken x hub" , "BloodTheme")
 
+Section:NewKeybind("Control", "nothing", Enum.KeyCode.Ctrl, function()
+	Library:ToggleUI(Right Control)
+end) 
+
 local Tab = Window:NewTab("Admin commands ")
 local Section = Tab:NewSection("Toggle Admin")
 Section:NewButton("Start", ">:c", function()
