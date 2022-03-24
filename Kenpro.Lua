@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Ken x hub" , "BloodTheme")
+local Window = Library.CreateLib("Ken x hub(Mix Script)" , "BloodTheme")
 
 Section:NewKeybind("Control", "nothing", Enum.KeyCode.Ctrl, function()
 	Library:ToggleUI(Right Control)
